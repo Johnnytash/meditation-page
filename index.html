@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the benefits of meditation and learn how to incorporate it into your daily routine.">
+    <title>Meditation Bliss 🧘‍♂️</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px 60px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            color: #00796b;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        h2 {
+            text-align: center;
+            border: 1px solid #00796b;
+            line-height: 50px;
+            padding: 15px;
+            font-size: 1.4rem;
+            border-radius: 5px;
+        }
+
+        p {
+            line-height: 1.5;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            background-color: #00796b;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            padding: 16px 24px;
+            border: 1px solid #00796b;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+            transition: all 0.15s ease-in-out;
+            cursor: pointer;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #e0f2f1;
+            opacity: 0.8;
+            color: #004d40;
+            border: 1px solid #00796b;
+        }
+
+        .learnMore {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #00796b;
+            font-size: 16px;
+        }
+
+        .learnMore:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 17px;
+            font-weight: 100;
+        }
+
+        span {
+            color: #00796b;
+        }
+
+        hr {
+            color: #00796b;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 40px;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+
+            button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px 20px;
+            }
+
+            h2 {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px 16px;
+                font-size: 12px;
+            }
+
+            .footer {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Experience the Calm of Meditation</h1>
+        <h2>Peaceful, Mindful, and Rejuvenating 🧘‍♀️</h2>
+        <hr>
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/133/656/original/meditating-woman.jpg?1721105116"
+            width="500">
+        <hr>
+        <p>
+            Meditation is not just a practice; it's a journey towards <strong>inner peace</strong> and
+            <strong>self-awareness</strong>. Whether you’re looking to <em>reduce stress</em> or simply find a moment of
+            tranquility, meditation is your go-to choice.
+            <br>
+            A session of meditation can help you improve <strong>mental clarity</strong>, <strong>emotional
+                stability</strong>, and <strong>overall well-being</strong>.
+        </p>
+        <p>
+            Ready to explore the world of meditation? Check out this <em>guide!</em>👇
+            <br>
+            <a href="https://www.mindful.org/how-to-meditate/" target="_blank" class="learnMore">Learn More on
+                Mindful</a>
+        </p>
+        <button aria-label="Start Meditating">Start Meditating 🧘‍♂️</button>
+        <p class="footer">
+            This page was created by <strong>John Thiongo</strong>. <br>
+            <span>Join me on this peaceful journey!</span>
+        </p>
+    </div>
+
+    <script>
+        function meditate() {
+            let name = prompt("What is your name?");
+            if (!name) {
+                alert("Please enter your name.");
+                return;
+            }
+
+            let email = prompt("What is your email address?");
+            if (!email || !email.includes('@')) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            let emoji = prompt("What is your favourite emoji?");
+            if (!emoji) {
+                alert("Please enter your favourite emoji.");
+                return;
+            }
+
+            alert(`Thank you ${name}! Enjoy your peaceful meditation ${emoji}`);
+        }
+
+        let button = document.querySelector('button');
+        button.addEventListener('click', meditate);
+    </script>
+</body>
+
+</html>
